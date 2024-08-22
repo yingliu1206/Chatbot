@@ -37,3 +37,41 @@ This chatbot project uses a neural network model to classify user inputs into pr
    ```bash
    git clone https://github.com/yingliu1206/Chatbot.git
    cd Chatbot
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Download NLTK Data**
+   ```bash
+   import nltk
+   nltk.download('punkt')
+   nltk.download('wordnet')
+
+4. **Train the Model**: Run the training script to train the chatbot model
+   ```bash
+   python train_chatbot.py
+
+5. **Run the Chatbot**: Start the chatbot with the GUI:
+   ```bash
+   python chatbot_gui.py
+
+
+### Usage
+1. Launch the chatbot GUI by running chatbot_gui.py.
+2. Type your message into the text box and press "Send" or hit Enter.
+3. The chatbot will respond based on the trained model.
+
+
+### Project Structure
+chatbot-project/
+│
+├── intents.json          # Contains the intents, patterns, and responses
+├── train_chatbot.py      # Script to preprocess data and train the model
+├── chatbot_gui.py        # Script to launch the Tkinter GUI for the chatbot
+├── chatbot_model.h5      # Saved Keras model after training
+├── words.pkl             # Pickle file containing the preprocessed words
+├── classes.pkl           # Pickle file containing the list of classes (intents)
+├── README.md             # Project documentation
+└── requirements.txt      # Python dependencies
+
