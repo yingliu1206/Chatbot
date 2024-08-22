@@ -57,13 +57,13 @@ This chatbot project uses a neural network model to classify user inputs into pr
    python chatbot_gui.py
 
 
-### Usage
+## Usage
 1. Launch the chatbot GUI by running chatbot_gui.py.
 2. Type your message into the text box and press "Send" or hit Enter.
 3. The chatbot will respond based on the trained model.
 
 
-### Project Structure
+## Project Structure
   ```bash
 chatbot-project/
 │
