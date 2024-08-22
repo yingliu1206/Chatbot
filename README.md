@@ -42,6 +42,39 @@ This chatbot project uses a neural network model to classify user inputs into pr
    ```bash
    pip install -r requirements.txt
 
+**Note for Apple ARM Users**: If you're using an Apple ARM (M1 or M2) machine, install TensorFlow using Miniforge to avoid compatibility issues. Set up a Miniforge environment and install TensorFlow as follows:
+
+```bash
+# Download Miniforge installer
+curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+
+# Install Miniforge
+bash Miniforge3-MacOSX-arm64.sh
+
+# Check and update Shell configuration
+nano ~/.zshrc
+# Add the following line to the file:
+# export PATH="/Users/yourusername/miniforge3/bin:$PATH"
+# Save and exit by pressing Ctrl + X, then Y to confirm changes, and Enter to save.
+
+# Apply the changes
+source ~/.zshrc
+
+# Verify Python path
+which python # It should point to something like /Users/yourusername/miniforge3/bin/python.
+
+# Check architecture
+python -c "import platform; print(platform.platform())"
+
+# Create and activate the environment
+python -m venv chatbot_env
+source chatbot_env/bin/activate
+
+# Install TensorFlow
+pip install tensorflow-macos
+```
+
+
 3. **Download NLTK Data**
    ```bash
    import nltk
@@ -75,4 +108,4 @@ chatbot-project/
 ├── classes.pkl           # Pickle file containing the list of classes (intents)
 ├── README.md             # Project documentation
 └── requirements.txt      # Python dependencies
-
+```
