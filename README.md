@@ -64,6 +64,7 @@ This chatbot project uses a neural network model to classify user inputs into pr
 
 
 ### Project Structure
+  ```bash
 chatbot-project/
 │
 ├── intents.json          # Contains the intents, patterns, and responses
