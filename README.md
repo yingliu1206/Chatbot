@@ -9,9 +9,8 @@ This project is a simple AI-powered chatbot built using Python, Keras, and Tkint
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
+- [Chatbot Interface](#Chatbot-Interface)
+
 
 ## Project Overview
 
@@ -95,7 +94,6 @@ pip install tensorflow-macos
 2. Type your message into the text box and press "Send" or hit Enter.
 3. The chatbot will respond based on the trained model.
 
-
 ## Project Structure
   ```bash
 chatbot-project/
@@ -109,3 +107,6 @@ chatbot-project/
 ├── README.md             # Project documentation
 └── requirements.txt      # Python dependencies
 ```
+
+## Chatbot Interface
+![Chatbot Interface](Chatbot_Interface.png)
